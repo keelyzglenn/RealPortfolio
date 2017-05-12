@@ -7,13 +7,20 @@
 
 <h2>Project</h2>
 <hr />
-<ol>
+
     @foreach (var project in Model)
     {
-        <li>
-            <ul>
-                <li>@Html.DisplayFor(modelItem => project.Name)</li>
-            </ul>
-        </li>
+
+        @if (project.Stargazers_count == "1")
+        {
+            
+               
+                    <p>@Html.DisplayFor(modelItem => project.Name)</p>
+                    <p> @Html.DisplayFor(modelItem => project.Description)</p>
+                    <p>@Html.DisplayFor(modelItem => project.FullName)</p>
+
+ 
+
+        }
+
     }
-</ol>

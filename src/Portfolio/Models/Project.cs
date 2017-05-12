@@ -14,11 +14,6 @@ namespace Portfolio.Models
     [Table("Projects")]
         public class Project
     {
-        //id
-        //stargazers_count
-        //description
-        //name
-        //full_name
 
         [Key]
         public string Id { get; set; }
@@ -27,14 +22,6 @@ namespace Portfolio.Models
         public string FullName { get; set; }
         public string Stargazers_count { get; set; }
 
-
-        //public static List<Project> GetProjects()
-        //{
-        //    //GET / users /:username / repos
-        //    //    / https://api.github.com/users/keelyzglenn/repos
-
-        //    //stargazers_count": 0
-        //}
 
         public static List<Project> GetProjects()
         {
