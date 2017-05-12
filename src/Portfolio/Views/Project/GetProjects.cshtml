@@ -5,17 +5,15 @@
 
 @model IEnumerable<Portfolio.Models.Project>
 
-<h2>Artist</h2>
+<h2>Project</h2>
 <hr />
 <ol>
     @foreach (var project in Model)
     {
         <li>
             <ul>
-                <li>To: @Html.DisplayFor(modelProject => project.Name)</li>
+                <li>@Html.DisplayFor(modelItem => project.Name)</li>
             </ul>
         </li>
     }
 </ol>
-
-
