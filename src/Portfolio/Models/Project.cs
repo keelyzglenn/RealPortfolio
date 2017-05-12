@@ -21,11 +21,11 @@ namespace Portfolio.Models
         //full_name
 
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Description { get; set; }
         public string Name { get; set; }
         public string FullName { get; set; }
-        public int Stargazers_count { get; set; }
+        public string Stargazers_count { get; set; }
 
 
         //public static List<Project> GetProjects()
