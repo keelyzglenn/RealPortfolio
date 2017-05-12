@@ -36,12 +36,12 @@ namespace Portfolio
             {
                 app.UseDeveloperExceptionPage();
             }
-            //app.UseIdentity();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
             });
             app.Run(async (error) =>
             {

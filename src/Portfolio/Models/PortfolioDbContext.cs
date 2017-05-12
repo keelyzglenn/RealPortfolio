@@ -8,6 +8,8 @@ namespace Portfolio.Models
 {
     public class PortfolioDbContext : DbContext
     {
+        public virtual DbSet<Project> Projects { get; set; }
+
         public PortfolioDbContext()
         {
         }

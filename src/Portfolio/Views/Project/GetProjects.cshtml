@@ -1,0 +1,21 @@
+﻿@*@{
+    ViewBag.Title = "Get Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}*@
+
+@model IEnumerable<Portfolio.Models.Project>
+
+<h2>Artist</h2>
+<hr />
+<ol>
+    @foreach (var project in Model)
+    {
+        <li>
+            <ul>
+                <li>To: @Html.DisplayFor(modelProject => project.Name)</li>
+            </ul>
+        </li>
+    }
+</ol>
+
+
